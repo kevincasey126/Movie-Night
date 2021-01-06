@@ -39,3 +39,6 @@ After making a pull from gitlab, all the tests can be run by running each test f
 4. UserTest.java : This class tests the User class.
 
 5. ServerTestDriver.java : Runs all the tests related to the server. (NOTE: Running the server tests will clean all the data which had previously been stored in the server.)
+
+
+
