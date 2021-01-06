@@ -1,5 +1,7 @@
 **Compilation Instructions:**
 
+NOTE: Servers are no longer active and application requires log in to use
+
 To run the JAR file, you must be running Java 15.
 The moviecache folder and placeholder image file must be in the same directory as the JAR file.
 
