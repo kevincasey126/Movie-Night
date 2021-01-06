@@ -1,3 +1,7 @@
+**Personal Contribution**
+
+This was a group project done in a software engineering class using an agile development process with four other students. My personal contribution was focused specifically on creating a server interface for the rest of my group to work with. The Server class was where most of my work was done, with additional help creating the user profile screen and the use of JavaFX sceen builder. 
+
 **Compilation Instructions:**
 
 NOTE: Servers are no longer active and application requires log in to use
