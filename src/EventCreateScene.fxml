@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" prefHeight="54.0" prefWidth="57.0" text="X">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" prefHeight="45.0" prefWidth="581.0" style="-fx-text-fill: #384BC7;" text="New Event" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="378.0" style="-fx-text-fill: #384BC7;" text="Event Name">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="event_name_field" maxWidth="375.0" prefHeight="25.0" prefWidth="375.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefHeight="17.0" prefWidth="378.0" style="-fx-text-fill: #384BC7;" text="Date">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="date_field" maxWidth="375.0" prefWidth="375.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefWidth="378.0" style="-fx-text-fill: #384BC7;" text="Location">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="location_field" maxWidth="375.0" prefWidth="375.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label prefWidth="378.0" style="-fx-text-fill: #384BC7;" text="Selected Movies">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <VBox fx:id="selected_movie_box" maxWidth="375.0" prefHeight="126.0" prefWidth="375.0" />
+            <Label prefWidth="378.0" style="-fx-text-fill: #384BC7;" text="Add Movie">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="add_movie_field" maxWidth="375.0" prefWidth="375.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="add_movie_button" mnemonicParsing="false" onAction="#pressedAddMovieButton" prefWidth="90.0" text="Add Movie">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font></Button>
+                  <Label fx:id="error_label" prefHeight="17.0" prefWidth="195.0" text="Error Message" visible="false" />
+                  <Button fx:id="create_event_button" mnemonicParsing="false" onAction="#pressedCreateEventButton" prefWidth="90.0" text="Create Event">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

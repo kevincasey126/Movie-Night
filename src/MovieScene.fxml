@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="main_anchor_pane" maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="592.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="69.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBack" prefHeight="38.0" prefWidth="41.0" text="X">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="69.0" prefWidth="45.0" />
+                  <Label fx:id="movie_name" alignment="CENTER" contentDisplay="TOP" prefHeight="69.0" prefWidth="410.0" text="MovieName" textAlignment="CENTER" underline="true" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="18.0" prefWidth="600.0" />
+            <HBox prefHeight="282.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="15.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="movie_poster" fitHeight="193.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="my_list_button" mnemonicParsing="false" onAction="#addMovieToList" text="Add to My List">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="event_button" mnemonicParsing="false" onAction="#addMovieToEvent" text="Add to Event">
+                           <padding>
+                              <Insets bottom="5.0" left="13.0" right="13.0" top="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="star1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#star1Pressed" prefHeight="25.0" prefWidth="28.0" text="☆" />
+                              <Button fx:id="star2" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#star2Pressed" prefHeight="25.0" prefWidth="28.0" text="☆" />
+                              <Button fx:id="star3" layoutX="38.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#star3Pressed" prefHeight="25.0" prefWidth="28.0" text="☆" />
+                              <Button fx:id="star4" layoutX="66.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#star4Pressed" prefHeight="25.0" prefWidth="28.0" text="☆" />
+                              <Button fx:id="star5" layoutX="94.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#star5Pressed" prefHeight="25.0" prefWidth="28.0" text="☆" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="282.0" prefWidth="15.0" />
+                  <VBox prefHeight="335.0" prefWidth="430.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="421.0">
+                           <children>
+                              <Label style="-fx-text-fill: #008;" text="Description">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                 </font></Label>
+                              <HBox prefHeight="146.0" prefWidth="421.0">
+                                 <children>
+                                    <Pane prefHeight="65.0" prefWidth="30.0" />
+                                    <ScrollPane prefHeight="146.0" prefWidth="456.0" style="-fx-border-color: #008;">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="268.0" prefWidth="391.0">
+                                             <children>
+                                                <Label fx:id="movie_desc" alignment="TOP_LEFT" layoutX="9.0" maxHeight="293.0" maxWidth="-Infinity" prefHeight="293.0" prefWidth="383.0" text="Moviedesc" wrapText="true" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="58.0" prefWidth="428.0">
+                           <children>
+                              <VBox prefHeight="60.0" prefWidth="434.0">
+                                 <children>
+                                    <Label style="-fx-text-fill: #008;" text="Release Date">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="49.0" prefWidth="434.0">
+                                       <children>
+                                          <Pane prefHeight="65.0" prefWidth="30.0" />
+                                          <Label fx:id="release_date" alignment="TOP_LEFT" prefHeight="31.0" prefWidth="143.0" text="ReleaseDate" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="434.0">
+                                 <children>
+                                    <Label style="-fx-text-fill: #008;" text="Runtime">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="49.0" prefWidth="434.0">
+                                       <children>
+                                          <Pane prefHeight="65.0" prefWidth="30.0" />
+                                          <Label fx:id="runtime" alignment="TOP_LEFT" prefHeight="28.0" prefWidth="143.0" text="Runtime" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="224.0" layoutY="10.0" prefHeight="60.0" prefWidth="434.0">
+                                 <children>
+                                    <Label style="-fx-text-fill: #008;" text="Rating">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="49.0" prefWidth="434.0">
+                                       <children>
+                                          <Pane prefHeight="65.0" prefWidth="30.0" />
+                                          <Label fx:id="rating" alignment="TOP_LEFT" prefHeight="24.0" prefWidth="143.0" text="Rating" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="60.0" prefWidth="434.0">
+                                 <children>
+                                    <Label style="-fx-text-fill: #008;" text="Director">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="49.0" prefWidth="434.0">
+                                       <children>
+                                          <Pane prefHeight="27.0" prefWidth="8.0" />
+                                          <Label fx:id="director" alignment="TOP_LEFT" prefHeight="48.0" prefWidth="164.0" text="ThatGuy" wrapText="true" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="85.0" prefWidth="512.0">
+                                 <children>
+                                    <Label style="-fx-text-fill: #008;" text="Actors">
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="49.0" prefWidth="434.0">
+                                       <children>
+                                          <Pane prefHeight="27.0" prefWidth="8.0" />
+                                          <Label fx:id="actors" alignment="TOP_LEFT" prefHeight="49.0" prefWidth="240.0" text="Actors" wrapText="true" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

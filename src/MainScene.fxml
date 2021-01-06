@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="main_anchor_pane" maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="109.0">
+               <children>
+                  <Button fx:id="profile_button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressedProfileButton" prefHeight="59.0" prefWidth="71.0" style="-fx-border-radius: 5px;" text="Profile " textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="266.0" prefWidth="109.0" />
+                  <Button fx:id="logout_button" mnemonicParsing="false" onAction="#pressedLogoutButton" prefHeight="59.0" prefWidth="71.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" text="Logout">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets right="45.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="380.0">
+               <children>
+                  <TextField fx:id="movie_search" onAction="#pressedSearch" promptText="Search" style="-fx-border-color: #0008FF;">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </TextField>
+                  <Pane prefHeight="25.0" prefWidth="380.0" />
+                  <Label prefHeight="17.0" prefWidth="383.0" style="-fx-text-fill: #008;" text="Recommended &amp; Featured">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font></Label>
+                  <SplitPane dividerPositions="0.408" prefHeight="185.0" prefWidth="380.0" style="-fx-border-color: #0008FF;">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-border-color: #8059a6;">
+                           <children>
+                              <Button fx:id="featuredMovie" layoutY="-1.0" mnemonicParsing="false" prefHeight="181.0" prefWidth="150.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="172.0" style="-fx-border-color: #8059a6;">
+                           <children>
+                              <TextArea fx:id="featured_Text_Area" editable="false" prefHeight="183.0" prefWidth="229.0" style="-fx-background-color: #6c8593;" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </SplitPane>
+                  <HBox alignment="CENTER" prefHeight="13.0" prefWidth="380.0" spacing="50.0">
+                     <children>
+                        <Button fx:id="featured1_button" mnemonicParsing="false" scaleX="2.0" scaleY="0.5" style="-fx-background-color: #0087FF; -fx-background-radius: 5px; -fx-border-color: #0008FF; -fx-border-radius: 5px;" />
+                        <Button fx:id="featured2_button" mnemonicParsing="false" scaleX="2.0" scaleY="0.5" style="-fx-background-color: #0087FF; -fx-border-radius: 5px; -fx-border-color: #0008FF; -fx-background-radius: 5px;" />
+                        <Button fx:id="featured3_button" mnemonicParsing="false" scaleX="2.0" scaleY="0.5" style="-fx-background-color: #0087FF; -fx-background-radius: 5px; -fx-border-color: #0008FF; -fx-border-radius: 5px;" />
+                        <Button fx:id="featured4_button" mnemonicParsing="false" scaleX="2.0" scaleY="0.5" style="-fx-background-color: #0087FF; -fx-background-radius: 5px; -fx-border-color: #0008FF; -fx-border-radius: 5px;" />
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="45.0" prefWidth="380.0" />
+                  <Button fx:id="browse_Button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressedBrowseButton" prefHeight="59.0" prefWidth="192.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" text="Browse" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="26.0" />
+                     </font>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <TabPane prefHeight="200.0" prefWidth="130.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Friends">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <StackPane prefHeight="371.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox fx:id="friends_Tab" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button fx:id="add_Friends_Button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressedAddFriendButton" prefHeight="32.0" prefWidth="130.0" text="Add Friends">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                             </font></Button>
+                                          <Label prefHeight="17.0" prefWidth="130.0" style="-fx-text-fill: #008;" text="Friend Requests:">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                             </font></Label>
+                                          <ScrollPane prefHeight="70.0" prefWidth="130.0">
+                                            <content>
+                                              <AnchorPane fx:id="pending_Friends_Scroll" minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="125.0">
+                                                   <children>
+                                                      <VBox fx:id="request_scroll_space" layoutX="13.0" layoutY="-86.0" prefHeight="0.0" prefWidth="125.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                          <Label prefHeight="17.0" prefWidth="133.0" style="-fx-text-fill: #008;" text="Friends:">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                             </font></Label>
+                                          <ScrollPane prefHeight="231.0" prefWidth="130.0">
+                                            <content>
+                                              <AnchorPane fx:id="friends_Scroll" minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="125.0">
+                                                   <children>
+                                                      <VBox fx:id="friends_scroll_space" layoutX="13.0" prefHeight="0.0" prefWidth="125.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                       <StackPane.margin>
+                                          <Insets top="5.0" />
+                                       </StackPane.margin>
+                                    </VBox>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Events">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="130.0">
+                           <children>
+                              <StackPane prefHeight="371.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Button fx:id="create_Events_Button" mnemonicParsing="false" onAction="#pressedCreateEventsButton" prefHeight="35.0" prefWidth="127.0" style="-fx-background-radius: 5px;" text="Create Events">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" top="5.0" />
+                                             </VBox.margin></Button>
+                                          <Label style="-fx-text-fill: #008;" text="Pending Events:">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                             </font></Label>
+                                          <ScrollPane prefHeight="70.0" prefWidth="127.0">
+                                            <content>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="70.0" prefWidth="127.0">
+                                                   <children>
+                                                      <VBox prefHeight="70.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                      <VBox fx:id="pending_events_scroll" prefHeight="70.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                          <Label style="-fx-text-fill: #008;" text="Current Events:">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+                                             </font></Label>
+                                          <ScrollPane prefHeight="230.0" prefWidth="130.0">
+                                            <content>
+                                              <AnchorPane fx:id="current_events_Scroll" minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="130.0">
+                                                   <children>
+                                                      <VBox fx:id="events_scroll_space" prefHeight="200.0" prefWidth="100.0" />
+                                                   </children></AnchorPane>
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                       <StackPane.margin>
+                                          <Insets top="5.0" />
+                                       </StackPane.margin>
+                                    </VBox>
+                                 </children>
+                              </StackPane>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </TabPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

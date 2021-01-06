@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="150.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" prefHeight="38.0" prefWidth="41.0" text="X">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Accordion prefHeight="340.0" prefWidth="150.0">
+                    <panes>
+                      <TitledPane animated="false" style="-fx-text-fill: #384BC7;" text="Genre">
+                           <content>
+                              <VBox prefHeight="400.0" prefWidth="151.0">
+                                 <children>
+                                    <ScrollPane prefHeight="354.0" prefWidth="130.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="465.0" prefWidth="111.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="100.0">
+                                                   <children>
+                                                      <CheckBox fx:id="action_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Action">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="adventure_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Adventure">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="animation_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Animation">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="biography_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Biography">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="comedy_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Comedy">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="crime_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Crime">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="documentary_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Documentary">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="drama_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Drama">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="family_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Family">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="fantasy_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Fantasy">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="filmnoir_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Film-Noir">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="gameshow_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Game-Show">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="history_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="History">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="horror_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Horror">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="music_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Music">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="musical_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Musical">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="mystery_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Mystery">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="news_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="News">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="reality_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Reality-TV">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="romance_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Romance">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="scifi_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Sci-Fi">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="sport_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Sport">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="talkshow_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Talk-Show">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="thriller_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Thriller">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="war_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="War">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                      <CheckBox fx:id="western_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="Western">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                                         </font></CheckBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </ScrollPane>
+                                    <Button fx:id="genre_filter_button" mnemonicParsing="false" onAction="#yearFilterPressed" text="Filter">
+                                       <opaqueInsets>
+                                          <Insets top="10.0" />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font></TitledPane>
+                      <TitledPane animated="false" prefHeight="52.0" prefWidth="152.0" style="-fx-text-fill: #384BC7;" text="Year">
+                           <content>
+                              <VBox prefHeight="78.0" prefWidth="152.0">
+                                 <children>
+                                    <TextField fx:id="startyear_textfield" promptText="Start Year" />
+                                    <TextField fx:id="endyear_textfield" promptText="End Year">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Button fx:id="year_filter_button" mnemonicParsing="false" onAction="#yearFilterPressed" text="Filter">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                       </font></Button>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font></TitledPane>
+                        <TitledPane animated="false" prefHeight="130.0" prefWidth="152.0" style="-fx-text-fill: #384BC7;" text="Rating">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="150.0">
+                                 <children>
+                                    <VBox layoutX="19.6" layoutY="19.6" prefHeight="125.0" prefWidth="131.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <CheckBox fx:id="g_rating_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="G">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                             </font></CheckBox>
+                                          <CheckBox fx:id="pg_rating_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="PG">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                             </font></CheckBox>
+                                          <CheckBox fx:id="pg13_rating_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="PG-13">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                             </font></CheckBox>
+                                          <CheckBox fx:id="r_rating_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="R">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                             </font></CheckBox>
+                                          <CheckBox fx:id="nc17_rating_checkbox" mnemonicParsing="false" selected="true" style="-fx-text-fill: #384BC7;" text="NC-17">
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                             </font></CheckBox>
+                                          <Button fx:id="rating_filter_button" mnemonicParsing="false" onAction="#yearFilterPressed" text="Filter">
+                                             <VBox.margin>
+                                                <Insets top="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                          </content>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children></VBox>
+            <VBox prefHeight="400.0" prefWidth="450.0">
+               <children>
+                  <TextField fx:id="searchbar_textfield" onAction="#onSearch" promptText="Enter a movie title...">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ScrollPane fx:id="movie_scrollpane" prefHeight="365.0" prefWidth="450.0" style="-fx-background-color: #cde3f1;">
+                    <content>
+                      <AnchorPane fx:id="movie_anchorpane" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="435.0">
+                           <children>
+                              <GridPane fx:id="movie_gridpane" hgap="10.0" prefHeight="0.0" prefWidth="435.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="75.0" prefWidth="75.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

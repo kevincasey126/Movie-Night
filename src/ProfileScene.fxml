@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="504.0" maxWidth="600.0" minHeight="504.0" minWidth="600.0" prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="462.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="156.0">
+               <children>
+                  <VBox prefHeight="49.0" prefWidth="133.0">
+                     <children>
+                        <Button fx:id="profile_back_button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pressedBackButton" prefHeight="38.0" prefWidth="41.0" text="X">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                           </font></Button>
+                        <Pane prefHeight="21.0" prefWidth="133.0" />
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="profile_picture" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="change_ProfilePicture_Button" mnemonicParsing="false" text="Change Profile Picture">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="445.0" style="-fx-border-color: #008;">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="445.0" style="-fx-text-fill: #008;" text="Profile Settings" underline="true">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="445.0" style="-fx-text-fill: #008;" text="Username">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username_text" prefHeight="36.0" prefWidth="423.0" text="Label">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="14.0" prefWidth="422.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="141.0" style="-fx-text-fill: #008;" text="Change Password">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="change_error" text="The Confirmed Password is Incorrect!" textFill="#da0b0b" visible="false" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="422.0">
+                     <children>
+                        <PasswordField fx:id="password_field" prefHeight="25.0" prefWidth="311.0" promptText="Enter Current Password" />
+                        <Button fx:id="change_Password_Button" alignment="CENTER" mnemonicParsing="false" text="Confirm Password">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="11.0" />
+                           </font></Button>
+                     </children>
+                  </HBox>
+                  <Label style="-fx-text-fill: #008;" text="Streaming Services">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="45.0" prefWidth="200.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="117.0" prefWidth="407.0">
+                           <children>
+                              <ListView fx:id="services_list" prefHeight="117.0" prefWidth="407.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <HBox prefHeight="15.0" prefWidth="422.0" spacing="10.0">
+                     <children>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: #3892C7;" text="Add New Service +" textFill="#384bc7">
+                          <items>
+                            <MenuItem fx:id="netflix_click" mnemonicParsing="false" text="Netflix" />
+                            <MenuItem fx:id="hulu_click" mnemonicParsing="false" text="Hulu" />
+                              <MenuItem fx:id="crave_click" mnemonicParsing="false" text="Crave" />
+                              <MenuItem fx:id="prime_click" mnemonicParsing="false" text="Prime" />
+                          </items>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font>
+                        </MenuButton>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: #3892C7;" text="Remove Streaming Service -" textFill="#384bc7">
+                          <items>
+                            <MenuItem fx:id="netflix_remove" mnemonicParsing="false" text="Netflix" />
+                            <MenuItem fx:id="hulu_remove" mnemonicParsing="false" text="Hulu" />
+                              <MenuItem fx:id="crave_remove" mnemonicParsing="false" text="Crave" />
+                              <MenuItem fx:id="prime_remove" mnemonicParsing="false" text="Prime" />
+                          </items>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+                  <Label style="-fx-text-fill: #008;" text="Movie Ratings">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane prefHeight="122.0" prefWidth="422.0">
+                    <content>
+                      <AnchorPane fx:id="anchor" minHeight="0.0" minWidth="0.0" prefHeight="112.0" prefWidth="407.0">
+                           <children>
+                              <VBox fx:id="movie_ratings_vbox" prefHeight="200.0" prefWidth="409.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <Label prefHeight="17.0" prefWidth="434.0" style="-fx-text-fill: #008;" text="Want to watch">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="10.0" layoutY="267.0" prefHeight="122.0" prefWidth="422.0">
+                     <content>
+                        <AnchorPane fx:id="anchorDesired" minHeight="0.0" minWidth="0.0" prefHeight="112.0" prefWidth="407.0">
+                           <children>
+                              <VBox fx:id="desired_movie_vbox" prefHeight="110.0" prefWidth="409.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="16.0" />
+                  <Button fx:id="back_button" maxHeight="38.0" maxWidth="41.0" mnemonicParsing="false" onAction="#pressedBack" prefHeight="38.0" prefWidth="41.0" text="X">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="260.0" />
+                  <Label contentDisplay="TOP" prefHeight="100.0" prefWidth="483.0" style="-fx-text-fill: #008;" text="Movie Night" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="18.0" prefWidth="600.0" />
+            <VBox alignment="TOP_CENTER" fillWidth="false" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192.0" prefWidth="301.0" style="-fx-border-color: Grey;" VBox.vgrow="NEVER">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="33.0" prefWidth="289.0" style="-fx-text-fill: #008;" text="Sign Up">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font></Label>
+                  <Pane prefHeight="35.0" prefWidth="289.0" />
+                  <HBox prefHeight="64.0" prefWidth="305.0">
+                     <children>
+                        <TextField fx:id="first_name_field" prefHeight="25.0" prefWidth="120.0" promptText="First Name" />
+                        <TextField fx:id="last_name_field" prefHeight="25.0" prefWidth="126.0" promptText="Last Name">
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <TextField fx:id="username_field" prefHeight="25.0" prefWidth="307.0" promptText="Username" />
+                  <Pane prefHeight="40.0" prefWidth="289.0" />
+                  <PasswordField fx:id="password_field" prefHeight="25.0" prefWidth="340.0" promptText="Password" />
+                  <Pane prefHeight="40.0" prefWidth="289.0" />
+                  <PasswordField fx:id="confirm_password_field" prefHeight="25.0" prefWidth="338.0" promptText="Confirm Password" />
+                  <Pane prefHeight="40.0" prefWidth="289.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Pane prefHeight="29.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="error_message" layoutX="286.0" layoutY="6.0" text="Error" visible="false" />
+               </children></Pane>
+            <Button fx:id="enter_button" mnemonicParsing="false" onAction="#pressedEnter" prefHeight="51.0" prefWidth="139.0" text="Enter">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>

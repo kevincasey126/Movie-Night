@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="16.0" />
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBack" prefHeight="38.0" prefWidth="41.0" text="X">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="191.0" />
+                  <Label contentDisplay="TOP" prefHeight="100.0" prefWidth="446.0" style="-fx-text-fill: #008;" text="Movie Night" textAlignment="CENTER">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="30.0" prefWidth="600.0" />
+            <VBox alignment="TOP_CENTER" fillWidth="false" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="167.0" prefWidth="301.0" style="-fx-border-color: #3892C7;" VBox.vgrow="NEVER">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="18.0" prefWidth="301.0" style="-fx-text-fill: #008;" text="Login">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font></Label>
+                  <Pane prefHeight="48.0" prefWidth="289.0" />
+                  <TextField fx:id="username_field" prefHeight="34.0" prefWidth="289.0" promptText="Username" />
+                  <Pane prefHeight="51.0" prefWidth="301.0" />
+                  <PasswordField fx:id="password_field" prefHeight="25.0" prefWidth="340.0" promptText="Password" />
+                  <Pane prefHeight="29.0" prefWidth="301.0" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Pane prefHeight="29.0" prefWidth="600.0" />
+            <Button fx:id="enter_button" mnemonicParsing="false" onAction="#pressedEnter" prefHeight="51.0" prefWidth="139.0" text="Enter">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Button>
+         </children></VBox>
+   </children>
+</AnchorPane>

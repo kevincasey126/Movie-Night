@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cde3f1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="150.0">
+               <children>
+                  <Button fx:id="back_button" mnemonicParsing="false" onAction="#pressedBackButton" prefHeight="38.0" prefWidth="41.0" text="X">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Accordion prefHeight="340.0" prefWidth="150.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="52.0" prefWidth="152.0" text="Year" textFill="#000088">
+                           <content>
+                              <VBox prefHeight="78.0" prefWidth="152.0">
+                                 <children>
+                                    <TextField fx:id="startyear_textfield" promptText="Start Year" />
+                                    <TextField fx:id="endyear_textfield" promptText="End Year">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Button fx:id="year_filter_button" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#yearFilterPressed" style="-fx-background-color: #3892C7;" text="Filter">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                       </font></Button>
+                                 </children>
+                              </VBox>
+                           </content>
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                           </font></TitledPane>
+                    </panes>
+                  </Accordion>
+               </children></VBox>
+            <VBox prefHeight="400.0" prefWidth="450.0">
+               <children>
+                  <TextField fx:id="searchbar_textfield" onAction="#onSearch" promptText="Enter a movie title...">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ScrollPane fx:id="movie_scrollpane" prefHeight="365.0" prefWidth="450.0">
+                    <content>
+                      <AnchorPane fx:id="movie_anchorpane" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="435.0">
+                           <children>
+                              <GridPane fx:id="movie_gridpane" hgap="10.0" prefHeight="0.0" prefWidth="435.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="75.0" prefWidth="75.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
